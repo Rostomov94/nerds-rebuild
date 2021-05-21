@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container header-container">
+      <h2 class="visually-hidden">Главная навигация</h2>
+      <div class="nav-block">
+        <a class="nerds-logo" href="index.html" aria-label="Главная страница nёrds"><img src="img/nerds-logo.svg" alt="Nёrds" width="160" height="70"></a>
+        <nav class="main-navigation">
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="index.html" class="nav-link">Студия</a></li>
+            <li class="nav-list-item"><a href="#" class="nav-link">Клиенты</a></li>
+            <li class="nav-list-item"><a href="catalog.html" class="nav-link nav-link--active">Магазин</a></li>
+            <li class="nav-list-item"><a href="#" class="nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a class="icon-basket" href="#">Корзина</a>
+      </div>
+    </div>
+  </header>
+  <main class="page-main-catalog">
+    <section class="shop-block">
+      <h1 class="shop-main-title">Магазин готовых шаблонов</h1>
+    </section>
+    <div class="container">
+      <div class="block-flex">
+        <form class="main-form" method="post">
+          <h2 class="form-title">Стоимость:</h2>
+          <article class="form-range-filter">
+            <section class="form-range-control">
+              <div class="form-range-scale">
+                <div class="form-range-bar"></div>
+              </div>
+              <div class="form-range-toggle form-range-toggle__min"></div>
+              <div class="form-range-toggle form-range-toggle__max"></div>
+            </section>
+          </article>
+          <article class="form-range-price">
+            <label class="form-min-price">от <input name="form-min-price" type="text" value="0"></label>
+            <label class="form-max-price">до <input name="form-max-price" type="text" value="15000"></label>
+          </article>
+          <fieldset class="form-radio">
+            <legend class="form-radio-title">Сетка:</legend>
+            <div class="form-radio-block">
+              <p class="form-radio-item">
+                <input class="form-radio-item-input" type="radio" name="radio-grid-one" checked="checked" id="adap" />
+                <label class="form-radio-item-label" for="adap">Адаптивная</label>
+              </p>
+              <p class="form-radio-item">
+                <input class="form-radio-item-input" type="radio" name="radio-grid-one" id="fix" />
+                <label class="form-radio-item-label" for="fix">Фиксированная</label>
+              </p>
+              <p class="form-radio-item">
+                <input class="form-radio-item-input" type="radio" name="radio-grid-one" id="rubber" />
+                <label class="form-radio-item-label" for="rubber">Резиновая</label>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="form-checkbox">
+            <legend class="form-checkbox-title">Особенности:</legend>
+            <div class="form-checkbox-block">
+              <p class="form-checkbox-item">
+                <input class="form-checkbox-input" type="checkbox" name="slider" checked="checked" id="slider" />
+                <label class="form-checkbox-label" for="slider">Слайдер</label>
+              </p>
+              <p class="form-checkbox-item">
+                <input class="form-checkbox-input" type="checkbox" name="advantages" id="advantages" />
+                <label class="form-checkbox-label" for="advantages">Блок приемуществ</label>
+              </p>
+              <p class="form-checkbox-item">
+                <input class="form-checkbox-input" type="checkbox" name="news" checked="checked" id="news" />
+                <label class="form-checkbox-label" for="news">Новости</label>
+              </p>
+              <p class="form-checkbox-item">
+                <input class="form-checkbox-input" type="checkbox" name="gallery" id="gallery" />
+                <label class="form-checkbox-label" for="gallery">Галерея</label>
+              </p>
+              <p class="form-checkbox-item">
+                <input class="form-checkbox-input" type="checkbox" name="basket" id="basket" />
+                <label class="form-checkbox-label" for="basket">Корзина</label>
+              </p>
+            </div>
+          </fieldset>
+          <input class="show-btn" type="submit" value="Показать">
+        </form>
+        <section class="main-shop">
+          <div class="sort-block">
+            <h2 class="sort-title">Сортировать:</h2>
+            <a class="sort-link" href="#">По цене</a>
+            <a class="sort-link" href="#">По типу</a>
+            <a class="sort-link" href="#">По названию</a>
+            <a class="arrow-dowm" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11" />
+              </svg>
+            </a>
+            <a class="arrow-up" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z" />
+              </svg>
+            </a>
+          </div>
+          <ul class="shop" aria-label="Выбор готового шаблона">
+            <li class="shop-item">
+              <div class="shop-browser">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+                  <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+                </svg>
+              </div>
+              <img class="shop-img" src="img/img-sedona.jpg" alt="sedona" width="360" height="575">
+              <section class="shop-footer">
+                <h4 class="shop-title">Sedona</h4>
+                <p class="shop-desc">Информационный сайт</p>
+                <p class="shop-desc shop-desc__two">для туристов</p>
+                <a class="shop-btn" href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="shop-item">
+              <div class="shop-browser">
+                <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+                  <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+                </svg>
+              </div>
+              <img class="shop-img" src="img/img-pink.jpg" alt="pink" width="360" height="575">
+              <section class="shop-footer">
+                <h4 class="shop-title">Pink app</h4>
+                <p class="shop-desc">Продуктовый лендинг</p>
+                <p class="shop-desc shop-desc__two">приложения для iOS и Android</p>
+                <a class="shop-btn" href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="shop-item">
+              <div class="shop-browser">
+                <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+                  <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+                </svg>
+              </div>
+              <img class="shop-img" src="img/img-barbershop.jpg" alt="barbershop" width="360" height="575">
+              <section class="shop-footer">
+                <h4 class="shop-title">Barbershop</h4>
+                <p class="shop-desc">Сайт салона красоты.</p>
+                <p class="shop-desc shop-desc__two">Для мужчин, да.</p>
+                <a class="shop-btn" href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="shop-item">
+              <div class="shop-browser">
+                <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+                  <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+                </svg>
+              </div>
+              <img class="shop-img" src="img/img-mishka.jpg" alt="mishka" width="360" height="575">
+              <section class="shop-footer">
+                <h4 class="shop-title">Mishka</h4>
+                <p class="shop-desc">Интернет - магазин</p>
+                <p class="shop-desc shop-desc__two">вязаных игрушек</p>
+                <a class="shop-btn" href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="shop-item">
+              <div class="shop-browser">
+                <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+                  <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+                </svg>
+              </div>
+              <img class="shop-img" src="img/img-aplus.jpg" alt="aplus" width="360" height="575">
+              <section class="shop-footer">
+                <h4 class="shop-title">A plus</h4>
+                <p class="shop-desc">Лендинг курсов повышения</p>
+                <p class="shop-desc shop-desc__two">квалификации</p>
+                <a class="shop-btn" href="#">9 900 руб.</a>
+              </section>
+            </li>
+            <li class="shop-item">
+              <div class="shop-browser">
+                <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+                  <path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+  s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+  c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z" />
+                </svg>
+              </div>
+              <img class="shop-img" src="img/img-kvast.jpg" alt="kvast" width="360" height="575">
+              <section class="shop-footer">
+                <h4 class="shop-title">Кваст</h4>
+                <p class="shop-desc">Промо - сайт производителя</p>
+                <p class="shop-desc shop-desc__two">крафтового кваса</p>
+                <a class="shop-btn" href="#">9 900 руб.</a>
+              </section>
+            </li>
+          </ul>
+          <ul class="navigation-shop">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#" class="next">Следующая</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <section class="map">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A093b4abc1fab7a2d4c91bf0e0e254837b73e4c7c0eccd42a4615734639413823&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+      <div class="container container-map">
+        <div class="map-info">
+          <p class="map-info-title">Nёrds design studio</p>
+          <p class="map-info-desc">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p class="map-info-desc-two">тел. +7 (812) 275-75-75</p>
+          <a class="map-info-btn" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+    <h2 class="visually-hidden">Nёrds в социальных сетях</h2>
+    <div class="footer-container container">
+      <div class="social-icons">
+        <ul class="social-ul">
+          <li class="social-item"><a class="social" target="_blank" href="https://vk.com/" aria-label="Nёrds во вконтакте">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+                <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" />
+              </svg></a>
+          </li>
+          <li class="social-item"><a class="social" target="_blank" href="https://www.facebook.com/" aria-label="Nёrds в фейсбуке">
+              <svg version="1.1" id="Layer_8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="22px" viewBox="0 0 12 22" enable-background="new 0 0 12 22" xml:space="preserve">
+                <path fill="#FFFFFF" d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item"><a class="social" target="_blank" href="https://instagram.com/" aria-label="Nёrds в инстрагаме">
+              <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                <path d="m18 0h-15c-1.65 0-3 1.35-3 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3v-15c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm7.5 11h-15v-9h1.181c-.114.482-.181.983-.181 1.5 0 3.59 2.91 6.5 6.5 6.5s6.5-2.91 6.5-6.5c0-.517-.066-1.018-.181-1.5h1.181zm0-11h-4v-4h4z" fill="#fff" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-desc">
+        <p class="footer-title">Давайте дружить, это выгодно!</p>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+  <article class="pop-up pop-up-catalog container">
+    <h2 class="visually-hidden">Форма отправки</h2>
+    <form class="pop-up-form" method="post">
+      <fieldset class="pop-up-field">
+        <legend class="pop-up-title">Напишите нам</legend>
+        <div class="flex-pop-up">
+          <p class="pop-up-item">
+            <label class="pop-up-label" for="your-name">Ваше имя:</label>
+            <input class="pop-up-input" type="text" id="your-name" name="your-name" placeholder="Имя фамилия" required>
+          </p>
+          <p class="pop-up-item">
+            <label class="pop-up-label" for="your-mail">Ваш e-mail:</label>
+            <input class="pop-up-input" type="email" id="your-mail" name="your-mail" placeholder="email@example.com" required>
+          </p>
+        </div>
+        <p class="pop-up-item pop-up-item-textarea">
+          <label class="pop-up-label" for="comment-field">Текст письма:</label>
+          <textarea class="pop-up-textarea" name="comment" id="comment-field" placeholder="В свободной форме"></textarea>
+        </p>
+        <input class="pop-up-btn" type="submit" value="Отправить">
+        <button class="pop-up-cross" aria-label="Закрыть окно">Закрыть<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+            <path fill="#FB565A" d="M13.328 10.5l7.371-7.371a1.003 1.003 0 0 0 0-1.414L19.285.3a1.003 1.003 0 0 0-1.414 0L10.5 7.672 3.129.301a1.003 1.003 0 0 0-1.414 0L.301 1.715a1.003 1.003 0 0 0 0 1.414L7.672 10.5.301 17.871a1.003 1.003 0 0 0 0 1.414l1.415 1.414a1.003 1.003 0 0 0 1.414 0l7.371-7.371 7.371 7.371a1.003 1.003 0 0 0 1.414 0l1.414-1.414a1.003 1.003 0 0 0 0-1.414L13.328 10.5z" />
+          </svg></button>
+      </fieldset>
+    </form>
+  </article>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
